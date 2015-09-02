@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataContent">
+  <DataContextMoniker Name="/DataContentDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9fff1234-88d8-4f53-8ea5-b8171d280ecd" absoluteBounds="0.5, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataContentDataContext/Kullanici" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aae664ae-f1d0-4b24-9c79-aa10e6767a69" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dd9f557-abdc-4150-b325-08966d1c0afc" absoluteBounds="0.5, 3.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataContentDataContext/Marka" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb50bad5-8bda-4f0d-8e6a-fc6a95ef0d55" absoluteBounds="0.515, 3.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c8c3a76-23ed-41eb-8e6f-9e5db21b0528" absoluteBounds="3.75, 3.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataContentDataContext/Arac" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8d9128b-44ca-4bcf-a953-bebfeea76ccd" absoluteBounds="3.765, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.97199625651042); (3.75 : 3.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataContentDataContext/Marka/Marka_Arac" />
+      <nodes>
+        <classShapeMoniker Id="3dd9f557-abdc-4150-b325-08966d1c0afc" />
+        <classShapeMoniker Id="6c8c3a76-23ed-41eb-8e6f-9e5db21b0528" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d5145a5e-86ef-41d7-8fe0-ac7bf54c99b0" absoluteBounds="3.625, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataContentDataContext/Kirala" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f82af2dc-298f-4040-8ee5-4b799bef5f67" absoluteBounds="3.6399999999999997, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.6875 : 3.375); (4.6875 : 2.84780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataContentDataContext/Arac/Arac_Kirala" />
+      <nodes>
+        <classShapeMoniker Id="6c8c3a76-23ed-41eb-8e6f-9e5db21b0528" />
+        <classShapeMoniker Id="d5145a5e-86ef-41d7-8fe0-ac7bf54c99b0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

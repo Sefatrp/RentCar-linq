@@ -1,0 +1,13 @@
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\bin\Debug\RentCar.exe.config
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\bin\Debug\RentCar.exe
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\bin\Debug\RentCar.pdb
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.csprojResolveAssemblyReference.cache
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.Form1.resources
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.Properties.Resources.resources
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.csproj.GenerateResource.Cache
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.exe
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.pdb
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.frmKullanaci.resources
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.frmKullananiciIslemleri.resources
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.Araclar.resources
+C:\Users\TURK\Documents\Visual Studio 2013\Projects\RentCar\RentCar\obj\Debug\RentCar.frmKiralama.resources

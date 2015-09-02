@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RentaCar" Class="DataContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=RentaCar;Integrated Security=True" SettingsObjectName="RentCar.Properties.Settings" SettingsPropertyName="RentaCarConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Kullanici" Member="Kullanicis">
+    <Type Name="Kullanici">
+      <Column Name="KullaniciID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KullaniciAdi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="KullaniciSifre" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Marka" Member="Markas">
+    <Type Name="Marka">
+      <Column Name="MarkaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MarkaAdi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Marka_Arac" Member="Aracs" ThisKey="MarkaID" OtherKey="Marka" Type="Arac" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Arac" Member="Aracs">
+    <Type Name="Arac">
+      <Column Name="AracID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AracAdi" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Marka" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Model" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Plaka" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Yakıt" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Ucret" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Durum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Arac_Kirala" Member="Kiralas" ThisKey="AracID" OtherKey="AracID" Type="Kirala" />
+      <Association Name="Marka_Arac" Member="Marka1" ThisKey="Marka" OtherKey="MarkaID" Type="Marka" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kirala" Member="Kiralas">
+    <Type Name="Kirala">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusteriAd" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MusteriSoyad" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MusteriTc" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="AracID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alim" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Toplam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Teslim" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Arac_Kirala" Member="Arac" ThisKey="AracID" OtherKey="AracID" Type="Arac" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
